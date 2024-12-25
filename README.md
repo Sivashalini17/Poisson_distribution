@@ -34,6 +34,9 @@ The Poisson distribution is the discrete probability distribution of the number 
 
  Developed by : SIVA SHALINI S
 Register number : 24009860
+```
+Developed by : Priyanka.A
+Register number : 212222230113
 
 import numpy as np
 import math
@@ -42,12 +45,12 @@ L=[int(i) for i in input().split()]
 N=len(L); M=max(L) 
 X=list();f=list()
 for i in range (M+1):
-c = 0
-for j in range(N):
-if L[j]==i:
-c=c+1
-f.append(c)
-X.append(i)
+    c = 0
+    for j in range(N):
+        if L[j]==i:
+            c=c+1
+    f.append(c)
+    X.append(i)
 sf=np.sum(f)
 p=list()
 for i in range(M+1):
@@ -70,6 +73,8 @@ if cal_chi2_sq<table_chi2:
     print("The given data can be fitted in poisson Distribution at 1% LOS")
 else:
     print("The given data cannot be fitted in Poisson Distribution at 1% LOS")
+ 
+```
  
 Output :
 
