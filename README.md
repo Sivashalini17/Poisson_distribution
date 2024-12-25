@@ -42,12 +42,12 @@ L=[int(i) for i in input().split()]
 N=len(L); M=max(L) 
 X=list();f=list()
 for i in range (M+1):
-    c = 0
-    for j in range(N):
-        if L[j]==i:
-            c=c+1
-    f.append(c)
-    X.append(i)
+c = 0
+for j in range(N):
+if L[j]==i:
+c=c+1
+f.append(c)
+X.append(i)
 sf=np.sum(f)
 p=list()
 for i in range(M+1):
